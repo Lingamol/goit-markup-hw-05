@@ -72,7 +72,9 @@
               Эффективные решения <br />
               для вашего бизнеса
             </h1>
-            <button class="section-banner-button" type="button">Заказать услугу</button>
+            <button data-modal-open class="section-banner-button" type="button">
+              Заказать услугу
+            </button>
           </div>
         </div>
       </section>
@@ -137,19 +139,43 @@
           <h2 class="section-work-title section-title">Чем мы занимаемся</h2>
           <ul class="section-work-list list-decoration">
             <li class="section-work-list-item">
-              <a class="section-work-list-item-img" href=""
-                ><img src="./images/img.jpg" alt="разработка блоксхемы" width="370"
-              /></a>
+              <a class="section-work-list-item-link link-decoration" href=""
+                ><div class="section-work-list-tumb">
+                  <img
+                    class="section-work-list-item-img"
+                    src="./images/img.jpg"
+                    alt="разработка блоксхемы"
+                    width="370"
+                  />
+                  <h3 class="section-work-list-caption">Десктопные приложения</h3>
+                </div>
+              </a>
             </li>
             <li class="section-work-list-item">
-              <a class="section-work-list-item-img" href=""
-                ><img src="./images/box2.jpg" alt="разарботка модели" width="370"
-              /></a>
+              <a class="section-work-list-item-link link-decoration" href=""
+                ><div class="section-work-list-tumb">
+                  <img
+                    class="section-work-list-item-img"
+                    src="./images/box2.jpg"
+                    alt="разарботка модели"
+                    width="370"
+                  />
+                  <h3 class="section-work-list-caption">Мобильные приложения</h3>
+                </div>
+              </a>
             </li>
             <li class="section-work-list-item">
-              <a class="section-work-list-item-img" href=""
-                ><img src="./images/box3.jpg" alt="выбор цвета" width="370"
-              /></a>
+              <a class="section-work-list-item-link link-decoration" href=""
+                ><div class="section-work-list-tumb">
+                  <img
+                    class="section-work-list-item-img"
+                    src="./images/box3.jpg"
+                    alt="выбор цвета"
+                    width="370"
+                  />
+                  <h3 class="section-work-list-caption">Дизайнерские решения</h3>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -448,5 +474,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal-button" type="button">
+          <svg class="modal-button-icon" width="30" height="30">
+            <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
